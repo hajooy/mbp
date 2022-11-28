@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /usr/local/tomcat/webapps
-rm -rf scripts/
+mv -f appspec.yml scripts ROOT /backup/
