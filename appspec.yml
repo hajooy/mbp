@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /usr/local/tomcat/webapps/
+    overwrite : yes    
+permissions:
+  - object: /usr/local/tomcat/webapps/
+    pattern: "*"
+    owner: root
+    mode: 777
+    type:
+      - file
+hooks:
+  AfterInstall:
+    - location: after_deploy.sh
+      timeout: 300
+      runas: root
+
