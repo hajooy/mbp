@@ -12,8 +12,15 @@ permissions:
     type:
       - file
 hooks:
-  AfterInstall:
-    - location: after_deploy.sh
+  ApplicationStop:
+    - location: scripts/stop_tomcat.sh
       timeout: 300
       runas: root
-
+  BeforeInstall:
+    - location: scripts/before_deploy.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/start_tomcat.sh
+      timeout: 300
+      runas: root
