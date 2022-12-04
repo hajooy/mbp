@@ -1,2 +1,1 @@
-Tomcat Deploy Success!
-CodePipeline Success !
+Jenkins CodePipeline Success!
