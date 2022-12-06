@@ -1,1 +1,1 @@
-Jenkins CodeDeploy Success! 
+AutoScaling CodePipeline Success! 
