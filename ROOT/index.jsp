@@ -1,1 +1,0 @@
-AutoScaling CodePipeline Success!    
